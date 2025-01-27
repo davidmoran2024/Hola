@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo siento, Aitana</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('Amor.jpeg') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            animation: fadeIn 2s ease;
+        }
+
+        h1 {
+            color: #6c63ff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #ff758c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+
+        .lyrics {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #555;
+            white-space: pre-line;
+            max-height: 200px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Lo siento, Aitana :((( </h1>
+        <p>Quiero disculparme contigo. Reconozco que no he estado actuando de la mejor manera y quiero ser mejor para ti.</p>
+        <p>Eres increíblemente importante para mí, y me duele saber que no he estado a tu altura. Prometo mejorar y demostrarte cuánto te valoro, no te vayas :( </p>
+        <button onclick="showMessage()">Te amo ❤</button>
+        <div class="lyrics">
+            What would I do without your smart mouth?
+            Drawing me in, and you kicking me out
+            You've got my head spinning, no kidding
+            I can't pin you down
+            What's going on in that beautiful mind?
+        </div>
+    </div>
+
+    <!-- Audio player -->
+    <audio autoplay loop>
+        <source src="Cancion.mp4" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showMessage() {
+            alert('Prometo hacerlo mejor y ser quien te mereces. ❤️');
+        }
+    </script>
+</body>
+</html>
